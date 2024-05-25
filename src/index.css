@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: monospace;
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    margin: 1rem;
+}
+
+.display{
+    font-size: 5rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 2px 2px 2px hsl(0, 0%, 0%, 0.5);
+    margin-bottom: 25px;
+}
+
+.controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button{
+    background-color: hsl(120, 100%, 30%);
+}
+
+.start-button:hover{
+    background-color: hsl(120, 100%, 25%);
+}
+
+.stop-button{
+    background-color: hsl(0, 100%, 30%);
+}
+
+.stop-button:hover{
+    background-color: hsl(0, 100%, 25%);
+}
+
+.reset-button{
+    background-color: hsl(240, 90%, 50%);
+}
+
+.reset-button:hover{
+    background-color: hsl(240, 90%, 35%);
+}
+
+.meu-nome{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+}
+
+.meu-nome a{
+    color: hsl(212, 100%, 34%);
+    text-decoration: none;
+}
+
+.meu-nome a:hover{
+    text-shadow: 0px 0px 15px hsl(212, 100%, 73%);
+}
